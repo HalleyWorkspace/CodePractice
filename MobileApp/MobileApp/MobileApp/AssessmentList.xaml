@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.AssessmentList">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D9D6">
+            <Frame BackgroundColor="#003057" 
+               Padding="0,0,0,20" 
+               CornerRadius="0">
+                <Label Text="Class Info"
+                       x:Name="className"
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+            </Frame>
+
+            <ListView x:Name="AssessmentListView" 
+                      RowHeight="70"
+                      ItemTapped="AssessmentListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout VerticalOptions="FillAndExpand">
+                                    <Label Text="{Binding AssessmentName}" FontSize="Large"/>
+                                    <Label Text="{Binding AssessmentType}" FontSize="Small"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout VerticalOptions="Center"
+                         HorizontalOptions="FillAndExpand"
+                         Padding="15,15,15,0">
+                <Button Text="Edit Assessment" 
+                    x:Name="EditAssessmentButton" 
+                    Clicked="EditAssessmentButton_Clicked" 
+                    Padding="20" 
+                    BackgroundColor="#4986AD" 
+                    HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="EndAndExpand"
+                         HorizontalOptions="FillAndExpand"
+                         Padding="15"
+                         MinimumHeightRequest="60">
+
+                <Button Text="Add Assessment"
+                        x:Name="AddAssessment"
+                        Clicked="AddAssessment_Clicked"
+                        Padding="20"
+                        BackgroundColor="#4986AD"
+                        HorizontalOptions="FillAndExpand"/>
+                <Button Text="Drop Assessment"
+                        x:Name="DropAssessmentButton"
+                        Clicked="DropAssessmentButton_Clicked"
+                        Padding="20"
+                        BackgroundColor="#4986AD"
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

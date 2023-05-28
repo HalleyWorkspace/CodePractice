@@ -1,0 +1,13 @@
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.csproj.AssemblyReference.cache
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.csproj.SuggestedBindingRedirects.cache
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.InventoryManagementSystem.resources
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.PartForm.resources
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.ProductForm.resources
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.Properties.Resources.resources
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.csproj.GenerateResource.cache
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.csproj.CoreCompileInputs.cache
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\bin\Debug\ThomasHalleyC968Project.exe.config
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\bin\Debug\ThomasHalleyC968Project.exe
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\bin\Debug\ThomasHalleyC968Project.pdb
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.exe
+D:\Dropbox\Dropbox\WGU\Software1\ThomasHalleyC968Project\ThomasHalleyC968Project\obj\Debug\ThomasHalleyC968Project.pdb

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.TermList">
+    
+    <StackLayout BackgroundColor="#D9D9D6" Padding="0,-10,0,0">
+            <Frame BackgroundColor="#003057" 
+               Padding="0,0,0,20" 
+               CornerRadius="0">
+                <Label Text="WGU Course Viewer" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+            </Frame>
+            <ListView x:Name="TermListView"
+                      ItemTapped="TermListView_ItemTapped"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding TermName}" FontSize="Medium" VerticalOptions="Center" Padding="15,0,0,0"/>
+                                    <Label Text="{Binding StartDate, StringFormat='{0:MM/dd/yyyy}'}" VerticalOptions="Center"/>
+                                    <Label Text=" - " VerticalOptions="Center"/>
+                                    <Label Text="{Binding EndDate, StringFormat='{0:MM/dd/yyyy}'}" VerticalOptions="Center"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout VerticalOptions="Center"
+                         HorizontalOptions="FillAndExpand"
+                         Padding="15,15,15,0">
+            <Button Text="Edit Term" 
+                    x:Name="EditTermButton" 
+                    Clicked="EditTermButton_Clicked" 
+                    Padding="20" 
+                    BackgroundColor="#4986AD" 
+                    HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                     VerticalOptions="Center" 
+                     HorizontalOptions="FillAndExpand"
+                     Padding="15,0,15,15">
+
+
+                <Button Text="Add Term" 
+                    x:Name="addTermButton" 
+                    Clicked="AddTermButton_Clicked" 
+                    Padding="20" 
+                    BackgroundColor="#4986AD" 
+                    HorizontalOptions="FillAndExpand"/>
+                <Button Text="Drop Term" 
+                    x:Name="DropTermButton" 
+                    Clicked="DropTermButton_Clicked" 
+                    Padding="20" 
+                    BackgroundColor="#4986AD" 
+                    HorizontalOptions="FillAndExpand"/>
+                
+            </StackLayout>
+        </StackLayout>
+    
+
+    
+</ContentPage>

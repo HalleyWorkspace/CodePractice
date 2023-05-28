@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.AssessmentEdit">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D9D6">
+            <Label Text="Assessment Name: "/>
+            <Entry Placeholder="Assessment Name" x:Name="assessmentName"/>
+            <Label Text="Assessment Type: "/>
+            <Picker Title="Select Type"
+                    x:Name="assessmentType">
+                <Picker.Items>
+                    <x:String>Objective Assessment</x:String>
+                    <x:String>Performance Assessment</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Due Date: "/>
+            <DatePicker x:Name="DueDatePicker"
+                        MinimumDate="01/01/2022"
+                        MaximumDate="12/31/2022"/>
+            <Label Text="Notifications: "/>
+            <Switch x:Name="notificationsPicker"
+                    IsToggled="False"/>
+            <Button Text="Save"
+                    x:Name="SaveButton"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="EndAndExpand"
+                    Clicked="SaveButton_Clicked"
+                    BackgroundColor="#4986AD"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

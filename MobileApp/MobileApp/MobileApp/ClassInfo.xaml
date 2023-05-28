@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.ClassInfo">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D9D6">
+            <Frame BackgroundColor="#003057" 
+               Padding="0,0,0,20" 
+               CornerRadius="0">
+                <Label Text="Class Info"
+                       x:Name="className"
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Status: "/>
+                <Label x:Name="status"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Start Date: "/>
+                <Label x:Name="startDate"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="End Date: "/>
+                <Label x:Name="endDate"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Instructor Name: "/>
+                <Label x:Name="instructorName"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Instructor Phone: "/>
+                <Label x:Name="instructorPhone"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Instructor Email: "/>
+                <Label x:Name="instructorEmail"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Notifications: "/>
+                <Label x:Name="notifications"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Notes: "/>
+                <Label x:Name="notes"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="EndAndExpand"
+                         HorizontalOptions="FillAndExpand"
+                         Padding="15"
+                         MinimumHeightRequest="60">
+                <Button Text="Share Notes"
+                        x:Name="ShareNotes"
+                        Clicked="ShareNotes_Clicked"
+                        Padding="20"
+                        BackgroundColor="#4986AD"
+                        HorizontalOptions="FillAndExpand"/>
+                <Button Text="Assessments"
+                        x:Name="AssesmentButton"
+                        Clicked="AssessmentButton_Clicked"
+                        Padding="20"
+                        BackgroundColor="#4986AD"
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.AssessmentInfo">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D9D6">
+            <Frame BackgroundColor="#003057" 
+               Padding="0,0,0,20" 
+               CornerRadius="0">
+                <Label Text="Assessment Info"
+                       x:Name="assessmentName"
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Assessment Type: "/>
+                <Label x:Name="type"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Due Date: "/>
+                <Label x:Name="dueDate"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Notifications: "/>
+                <Label x:Name="notifications"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

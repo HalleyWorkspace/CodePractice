@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.ClassList">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D9D6">
+            <Frame BackgroundColor="#003057" 
+               Padding="0,0,0,20" 
+               CornerRadius="0">
+                <Label Text="Class List"
+                       x:Name="termName"
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+            </Frame>
+            <ListView x:Name="ClassListView"
+                      ItemTapped="ClassListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding ClassName}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout VerticalOptions="Center"
+                         HorizontalOptions="FillAndExpand"
+                         Padding="15,15,15,0">
+                <Button Text="Edit Class" 
+                    x:Name="EditClassButton" 
+                    Clicked="EditClassButton_Clicked" 
+                    Padding="20" 
+                    BackgroundColor="#4986AD" 
+                    HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="Center"
+                         HorizontalOptions="FillAndExpand"
+                         Padding="15,0,15,15"
+                         MinimumHeightRequest="60">
+                
+                <Button Text="Add Class"
+                        x:Name="AddClassButton"
+                        Clicked="AddClassButton_Clicked"
+                        Padding="20"
+                        BackgroundColor="#4986AD"
+                        HorizontalOptions="FillAndExpand"/>
+                <Button Text="Drop Class"
+                        x:Name="DropClassButton"
+                        Clicked="DropClassButton_Clicked"
+                        BackgroundColor="#4986AD"
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.EditClass">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D9D6">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Class Name:"/>
+                    <Entry x:Name ="classNameEntry"
+                           Placeholder="Class Name"/>
+                    <Label Text="Status:"/>
+                    <Picker Title="Select Status"
+                            x:Name="statusPicker">
+                        <Picker.Items>
+                            <x:String>Incomplete</x:String>
+                            <x:String>In Progress</x:String>
+                            <x:String>Complete</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Label Text="Start Date:"/>
+                    <DatePicker x:Name="startDatePicker"
+                                MinimumDate="01/01/2022"
+                                MaximumDate="12/31/2032"/>
+                    <Label Text="End Date:"/>
+                    <DatePicker x:Name="endDatePicker"
+                                MinimumDate="01/01/2022"
+                                MaximumDate="12/31/2032"/>
+                    <Label Text="Instructor Name:" />
+                    <Entry x:Name="instructorNameEntry"
+                           Placeholder="Instructor Name"/>
+                    <Label Text="Instructor Phone:" />
+                    <Entry x:Name="instructorPhoneEntry"
+                           Placeholder="Instructor Phone"
+                           MaxLength="10"
+                           Keyboard="Numeric"/>
+                    <Label Text="Instructor Email:" />
+                    <Entry x:Name="instructorEmailEntry"
+                           Placeholder="Instructor Email"
+                           Keyboard="Email"/>
+
+                    <Label Text="Notifications: "/>
+                    <Switch x:Name="notifications" 
+                            IsToggled="False"/>
+                    <Label Text="Notes:" />
+                    <Entry x:Name="notes"
+                           Placeholder="Notes"/>
+                   </StackLayout>
+            </ScrollView>
+            <Button Text="Save"
+                    x:Name="SaveButton"
+                    HorizontalOptions="Fill"
+                    Clicked="SaveButton_Clicked"
+                    BackgroundColor="#4986AD"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.EditTerm">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#D9D9D6">
+            <Label Text="Term Name:"/>
+            <Entry x:Name ="termNameEntry"
+                   Placeholder="Term Name"
+                   ReturnType="Next"/>
+            <Label Text="Start Date:"/>
+            <DatePicker x:Name="startDatePicker"
+                        MinimumDate="01/01/2022"
+                        MaximumDate="12/31/2032"/>
+            <Label Text="End Date:"/>
+            <DatePicker x:Name="endDatePicker"
+                        MinimumDate="01/01/2022"
+                        MaximumDate="12/31/2032"/>
+            <Button Text="Save"
+                    x:Name="SaveButton"
+                    HorizontalOptions="Fill"
+                    Clicked="SaveButton_Clicked"
+                    BackgroundColor="#4986AD"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
